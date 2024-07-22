@@ -1,11 +1,11 @@
-import styles from "./page.module.css";
 import Filter from "@/components/Filter";
 import Characters from "@/components/Characters";
 import { FiltersProvider } from "@/hooks/useFilters";
+import React from 'react';
 
 export default function Home() {
   return (
-    <div className={styles.main}>
+    <div>
       <FiltersProvider>
         <Filter />
         <Characters />
