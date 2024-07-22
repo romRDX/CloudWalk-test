@@ -1,0 +1,30 @@
+.characters__container {
+  padding: 50px;
+  font-family: Helvetica;
+}
+
+.characters__title {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.characters__list {
+  width: inherit;
+  margin-top: 48px;
+  display: grid;
+  gap: 6rem 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(432px, 1fr));
+}
+
+
+@media (max-width: 768px) {
+  .characters__container {
+    padding: 25px;
+  }
+  
+  .characters__list {
+    gap: 2rem 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
