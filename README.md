@@ -24,8 +24,6 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 To run the tests you need to run this code:
 
-First, run the development server:
-
 ```bash
 npm test
 ```
