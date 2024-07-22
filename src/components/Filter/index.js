@@ -4,6 +4,7 @@ import { useFilters } from '@/hooks/useFilters';
 import { fetchMultipleData } from '@/utils/fetchUtils';
 import { useMemo } from 'react';
 import styles from "./filter.module.css";
+import Loader from '../Loader';
 
 const planetUrls = [
     'https://swapi.dev/api/planets/?page=1',
@@ -48,14 +49,12 @@ const Filter = () => {
         <div className={styles.filter__container}  aria-live="polite">
             <p className={styles.filter__text}>Filter By:</p>
 
-            {isPending && <p>Loading planets...</p>}
-            {isError && <p>Error loading planets: {error.message}</p>}
-
             <select
                 className={styles.filter__select}
                 onChange={handleSetFilter} id="selectInput"
                 aria-label="Filter by planet"
                 aria-required="true"
+                disabled={isPending && !data}
             >
                 <option className={styles['filter__select-option']} value="all">All</option>
                 {
@@ -71,7 +70,15 @@ const Filter = () => {
                         ))
                     )
                 }
+                {isError && <p>Error loading planets: {error.message}</p>}
             </select>
+            {
+                isPending && !data &&
+                <div className={styles.filter__loader}>
+                    <Loader size='xs' />
+                </div>
+            }
+            
         </div>
     )
 }
