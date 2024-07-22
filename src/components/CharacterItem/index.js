@@ -1,4 +1,5 @@
 'use client'
+import React from "react";
 import styles from "./characterItem.module.css";
 import { fetchData } from "@/utils/fetchUtils";
 import { useQuery } from '@tanstack/react-query';

@@ -4,6 +4,7 @@ import styles from './loader.module.css';
 const Loader = ({ size }) => {
     return (
         <div
+            id="loader"
             className={
                 `${styles.loader} ${styles[`loader--${size}`]}`
             }
