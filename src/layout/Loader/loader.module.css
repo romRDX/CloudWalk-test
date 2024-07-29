@@ -1,0 +1,30 @@
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: var(--spacing-sm) solid var(--color-senary);
+    border-top: var(--spacing-sm) solid var(--color-primary-transparent);
+    border-radius: 50%;
+    width: var(--spacing-xxxl);
+    height: var(--spacing-xxxl);
+    animation: spin 1s linear infinite;
+}
+
+.loader--sm {
+    width: var(--spacing-xl);
+    height: var(--spacing-xl);
+}
+
+.loader--xs {
+    width: var(--spacing-md);
+    height: var(--spacing-md);
+}

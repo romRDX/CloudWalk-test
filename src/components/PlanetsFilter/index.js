@@ -4,8 +4,8 @@ import { useQuery } from '@tanstack/react-query';
 import { useFilters } from '@/hooks/useFilters';
 import { fetchMultipleData } from '@/utils/fetchUtils';
 import { useMemo } from 'react';
-import styles from "./filter.module.css";
-import Loader from '../Loader';
+import styles from "./planetsFilter.module.css";
+import Loader from '../../layout/Loader';
 
 const planetUrls = [
     'https://swapi.dev/api/planets/?page=1',

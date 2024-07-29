@@ -1,5 +1,5 @@
 import React from 'react';
-import CharacterItem from '../../../components/CharacterItem';
+import CharacterItem from '../../../modules/characters/CharacterItem';
 import { render, screen, waitFor } from '@testing-library/react';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import { fetchData } from '../../../utils/fetchUtils';

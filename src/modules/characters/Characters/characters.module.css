@@ -1,11 +1,11 @@
 .characters__container {
-  padding: 50px;
+  padding: var(--spacing-xxl);
   font-family: Helvetica;
 }
 
 .characters__title {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: var(--font-size-xxxlarge);
+  line-height: var(--spacing-xxl);
   font-weight: 300;
 }
 
@@ -13,20 +13,20 @@
   position: relative;
   width: inherit;
   min-height: 400px;
-  margin-top: 48px;
+  margin-top: var(--spacing-xxl);
   display: grid;
-  gap: 6rem 1rem;
+  gap: 96px var(--spacing-md);
   grid-template-columns: repeat(auto-fill, minmax(432px, 1fr));
 }
 
 
 @media (max-width: 768px) {
   .characters__container {
-    padding: 25px;
+    padding: var(--spacing-lg);
   }
   
   .characters__list {
-    gap: 2rem 1rem;
+    gap: var(--spacing-xl) var(--spacing-md);
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 }

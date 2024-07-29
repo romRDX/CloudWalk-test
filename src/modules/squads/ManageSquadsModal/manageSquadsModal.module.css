@@ -1,0 +1,115 @@
+.manage-squads-modal__container {
+    border: 1px solid black;
+    background: #fff;
+    padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    position: relative;
+}
+
+.manage-squads-modal__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-sm) 0;
+    text-align: center;
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
+    background: var(--color-secondary);
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+.manage-squads-modal__select-container {
+    padding: var(--spacing-lg) var(--spacing-xxl);
+    font-family: Helvetica;
+    display: flex;
+    position: relative;
+}
+
+.manage-squads-modal__text {
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    margin: var(--spacing-xs) var(--spacing-sm) 0 0;
+}
+
+.manage-squads-modal__select {
+    padding: var(--spacing-xxs) 0 var(--spacing-xs) 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    width: 190px;
+    background-color: transparent;
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.manage-squads-modal__select-option {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.manage-squads-modal__squad-details__name {
+    font-size: var(--font-size-xxlarge);
+    font-weight: bold;
+    padding-bottom: var(--spacing-sm);
+    border-bottom: var(--spacing-xxs) solid var(--color-secondary);
+}
+
+.manage-squads-modal__squad-details__squad-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manage-squads-modal__squad-details__text {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    margin-bottom: var(--spacing-md);
+
+    border-bottom-left-radius: var(--border-radius-md);
+    border-bottom-right-radius: var(--border-radius-md);
+    border: var(--spacing-xxs) solid var(--color-secondary);
+    border-top: 0;
+    width: fit-content;
+    padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.manage-squads-modal__squad-details__button {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    margin-bottom: var(--spacing-md);
+
+    border-bottom-left-radius: var(--border-radius-md);
+    border-bottom-right-radius: var(--border-radius-md);
+    border: var(--spacing-xxs) solid var(--color-secondary);
+    border-top: 0;
+    width: fit-content;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background: var(--color-success);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.manage-squads-modal__squad-details__button:hover:not(:disabled) {
+    background-color: var(--color-success-dark);
+    color: var(--color-white);
+}
+
+.manage-squads-modal__squad-details__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+}
+
+.manage-squads-modal__squad-details__member-item {
+    border: var(--spacing-xxs) solid var(--color-secondary);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-md);
+}
+
+.manage-squads-modal__squad-details__member-item--you {
+    background-color: var(var(--color-success-dark));
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}

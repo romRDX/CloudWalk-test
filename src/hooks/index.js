@@ -1,25 +1,16 @@
 'use client'
 import React from 'react';
-import {
-    QueryClient,
-    QueryClientProvider,
-} from '@tanstack/react-query'
+import { SquadsProvider } from './useSquads';
+import { ModalProvider } from './useModal';
 
 const AppProvider = ({ children }) => {
- 
-  const queryClient = new QueryClient({
-    defaultOptions: {
-      queries: {
-        refetchOnWindowFocus: false,
-        keepPreviousData : true
-      }
-    }
-  });
   
   return (
-    <QueryClientProvider client={queryClient}>
-      {children}
-    </QueryClientProvider>
+    <SquadsProvider>
+      <ModalProvider>
+        {children}
+      </ModalProvider>
+    </SquadsProvider>
   )
 };
 

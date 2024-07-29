@@ -1,0 +1,38 @@
+.squad-item__container {
+    padding: var(--spacing-md);
+    border: var(--spacing-xxs) solid black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: var(--border-radius-lg);
+}
+
+.squad-item__name {
+    font-size: var(--font-size-xlarge);
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.squad-item__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: var(--spacing-xxs) solid var(--color-secondary);
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.squad-item__text {
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.squad-item__members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+}
+

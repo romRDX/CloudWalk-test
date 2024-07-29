@@ -6,7 +6,7 @@ import styles from "./characters.module.css";
 import { useQuery } from '@tanstack/react-query';
 import { fetchData, fetchMultipleData } from "@/utils/fetchUtils";
 import CharacterItem from "../CharacterItem";
-import Loader from "../Loader";
+import Loader from "@/layout/Loader";
 
 const Characters = () => {
     

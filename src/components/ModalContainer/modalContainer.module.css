@@ -1,0 +1,22 @@
+.modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  background: var(--color-primary);
+  opacity: .7;
+}
+
+.modal__content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+}

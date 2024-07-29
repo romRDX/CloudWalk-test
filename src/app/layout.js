@@ -1,7 +1,8 @@
 import React from 'react';
 import "./globals.css";
-import Header from "../components/Header";
+import Header from "@/layout/Header";
 import AppProvider from "@/hooks";
+import QueryProvider from '@/services/ReactQuery';
 
 export const metadata = {
   title: "Create Next App",
@@ -16,9 +17,11 @@ export default function RootLayout({ children }) {
         <Header />
 
         <main>
-          <AppProvider>
-            {children}
-          </AppProvider>
+          <QueryProvider>
+            <AppProvider>
+              {children}
+            </AppProvider>
+          </QueryProvider>
         </main>
         
       </body>

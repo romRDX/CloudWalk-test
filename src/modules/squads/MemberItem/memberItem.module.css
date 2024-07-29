@@ -1,0 +1,11 @@
+.member-item__container {
+    border: var(--spacing-xxs) solid var(--color-secondary);
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius-md);
+}
+
+.member-item__container--you {
+    background-color: var(--color-success);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
